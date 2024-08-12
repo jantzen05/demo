@@ -1,0 +1,11 @@
+services:
+  redis:
+    image: redislabs/redismod
+    ports:
+      - '6379:6379'
+  flask:
+    image: flask-redis
+    ports:
+      - '8000:8000'
+    depends_on:
+      - redis
