@@ -1,0 +1,9 @@
+docker image build -t flask-redis .
+
+#start
+docker-compose up
+
+#clean up
+docker-compose down
+
+docker-compose up -f

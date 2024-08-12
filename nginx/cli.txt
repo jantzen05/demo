@@ -1,0 +1,4 @@
+# cli
+docker run --name ng -p 8080:80 nginx
+
+docker run --name ng -p 8080:80 -v C:\workspace\dsb\demo\nginx:/usr/share/nginx/html nginx
